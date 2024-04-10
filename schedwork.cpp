@@ -81,10 +81,8 @@ bool schedule(
     
     map<Worker_T, size_t> shiftsCounter;
 
-    for(size_t day = 0; day < avail.size(); ++day){
-        for(Worker_T worker = 0; worker < avail[day].size(); ++worker){
-            shiftsCounter[worker] = 0;
-        }
+    for(size_t worker = 0; worker < avail[0].size(); ++worker){
+        shiftsCounter[worker] = 0;
     }
 
 
